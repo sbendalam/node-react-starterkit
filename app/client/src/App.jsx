@@ -20,7 +20,7 @@ function App() {
         <Fragment>
           <AppLayout>
             <Routes>
-              <Route path="/home" element={<Outlet />}>
+              <Route path="/" element={<Outlet />}>
                 <Route path="/home" element={<Home/>} />
                 <Route path="/home/profile" element={<Home/>} />
               </Route>
