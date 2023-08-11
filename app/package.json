@@ -5,9 +5,9 @@
   "main": "index.js",
   
   "scripts": {
-    "install-all": "npm i && cd client && npm i --force",
+    "install-all": "npm i && cd client && npm i ",
     "dev": "nodemon server/src/index.js ",
-    "start-mon": "concurrently --names \"server,client\" -c \"bgGreen.bold,bgBlue.bold\" \"nodemon server/src/index.js \" \"cd client && npm start\"",
+    "start-mon": "concurrently --names \"server,client\" -c \"bgGreen.bold,bgBlue.bold\" \"nodemon server/src/index.js \" \"cd client && npm run dev\"",
     "build": "cd client && npm run build",
     "build-deploy": "cd client && npm run build && cd .. && npm run create-zip",
     "start": "node server/src/index.js ",
