@@ -3,13 +3,6 @@
 
 This is a Starter template for react and node application
 
-
-# First Step
-change directory
-```bash
-  cd app
-```
-**ALL THE FOLLOWING COMMANDS WILL EXECUTE ONLY IN APP FOLDER**
 # Initializing
 
 Install both node and react dependencies with following npm command

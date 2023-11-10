@@ -39,8 +39,9 @@ app.use("/api", apiRouter);
 
 //Redirecting all remaining requests to frontend
 app.get("*", function (req, res) {
-    res.redirect("/");
-  });
+
+  res.sendFile('index.html',{root: path.resolve(__dirname, "../../publish")});
+});
 app.listen(PORT,()=>{
     console.log(`Listening on port ${PORT}`)
 })
